@@ -1,0 +1,123 @@
+.entry-content {
+    padding:rem(10) 0 rem(50) 0;
+
+    > * {
+        position:relative;
+        z-index:2;
+        @extend %container;
+    }
+
+    h1,h2,h3,h4,h5,h6 {
+        color:$secondary;
+        margin-bottom:rem(16);
+    }
+
+    h1 {
+        font-size:rem(42);
+    }
+    h2 {
+        font-size:rem(36);
+		position: relative;
+		&::after {
+			content: "";
+			width: 400px;
+			height: 3px;
+			left: 0;
+			bottom: -4%;
+			background: $primary;
+			position: absolute;
+		}
+	}
+    h3 {
+        font-size:rem(30);
+    }
+
+    h4 {
+        font-size:rem(26);
+    }
+
+    h5 {
+        font-size:rem(22);
+    }
+
+    h6 {
+        font-size:rem(18);
+    }
+
+    p {
+        &:empty {
+            display:none;
+        }
+
+        + p {
+            margin-top:1rem;
+        }
+
+        &.wp-caption-text {
+            margin:0;
+            padding-top:5px;
+            font-size:rem(14);
+            font-style:italic;
+            color:$primary;
+        }
+    }
+
+    a:not([class]) {
+        color:$secondary;
+        text-decoration:none;
+        transition:all 350ms ease-in-out;
+    }
+
+    img {
+        max-width:100%;
+        height:auto;
+    }
+    
+}
+.values {
+	h3 {
+		margin: 4% 0;
+	}
+	h2 {
+		margin: 0 0 4% 0;
+	}
+}
+.our-team {
+	margin-bottom: 2%;
+}
+#team {
+	padding: 0 5%;
+	.team-member {
+		width: 25%;
+		margin: 0 1%;
+		img {
+			width: 80%;
+			margin-bottom: 6%;
+		}
+		h5 {
+			margin: 0;
+		}
+	}
+}
+.hero-content {
+	display: flex;
+	width: 86%;
+	h1 {
+		position: relative;
+		padding-bottom: 3%;
+		&::after {
+			content: "";
+			width: 50%;
+			height: 3px;
+			left: 25%;
+			right: 25%;
+			bottom: 8%;
+			background: $primary;
+			position: absolute;
+		}
+	}
+	& > div {
+		padding: 6% 0%;
+		width: 51%;
+	}
+}

@@ -1,0 +1,39 @@
+$xs: 48rem; // 480
+$sm: 76.8rem; // 768
+$sm-max: calc(76.8rem - 1px);
+$md: 102.4rem; // 1024
+$lg: 120rem; // 1200
+$xl: 140rem; // 1400
+
+$gutter-width: 4rem;
+$half-gutter-width: 2rem;
+$container-md: calc(#{$md} + #{$gutter-width});
+$container-lg: calc(#{$lg} + #{$gutter-width});
+$container-xl: calc(#{$xl} + #{$gutter-width});
+$content-contain: 1440px;
+// Colors
+$black: var(--color_black);
+$white: var(--color_white);
+$gray: var(--color_gray);
+$gray_rgb: var(--color_gray_rgb);
+$grey: $gray;
+$gray_dark: var(--color_gray_dark);
+$grey_dark: $gray_dark;
+$primary: var(--color_primary);
+$primary_rgb: var(--color_primary_rgb);
+$secondary: var(--color_secondary);
+$secondary_rgb: var(--color_secondary_rgb);
+
+$bg-trans-primary: rgba($primary_rgb,.8); 
+$bg-trans-secondary: rgba($secondary_rgb,.8); 
+
+// Fonts
+$icon: 'hammer';
+
+$light: 300;
+$regular: 400;
+$bold: 600;
+
+// Update with Google font
+$font: 'Open Sans', sans-serif;
+$font-secondary: 'Heebo', sans-serif;

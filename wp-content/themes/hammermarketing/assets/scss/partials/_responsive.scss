@@ -1,0 +1,47 @@
+@media (max-width: 1900px) {
+	.nav-wrap{
+	 	width: auto;
+	}
+}
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 1024px) {
+    .hero-content > div {
+        width: auto;
+    }
+}
+@media (max-width: 768px) {
+    .hero-content {
+        width: auto;
+        padding:0 4%;
+    }
+    .flexbox {
+        flex-direction: column;
+    }
+    a.flexbox, #menu-footer {
+        flex-direction: row;
+        justify-content: center;
+    }
+    #menu-footer {
+        margin: 6% 0;
+    }
+    #team {
+        text-align: center;
+        .team-member {
+            width: 100%;
+            margin: 2% 0;
+            img {
+                width: 50%;
+                margin: 2% auto;
+            }
+        }
+    }
+    .main-nav {
+        li {
+            padding: 0 0 0 2rem;
+        }
+    }
+    
+}

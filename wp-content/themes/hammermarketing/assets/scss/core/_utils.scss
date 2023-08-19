@@ -1,0 +1,83 @@
+%container {
+    max-width:$container-lg;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    padding:0 rem(20);
+
+    &.wide {
+        max-width:$container-xl;
+    }
+}
+
+.container {
+    @extend %container;
+}
+
+%btn {
+    border:0;
+    background:#333;
+    color:white;
+    padding:rem(10) rem(20);
+    font-size:rem(16);
+    display:inline-block;
+    outline:0;
+    border-radius:0;
+    text-decoration:none;
+    margin-bottom:rem(10);
+    transition:all 350ms ease-in-out;
+}
+
+%btn_primary {
+    background:$primary;
+
+    &:hover,
+    &:focus {
+        background:$secondary;
+        border: 2px solid $primary;
+    }
+}
+
+%btn_secondary {
+    background:$secondary;
+
+    &:hover,
+    &:focus {
+        background:$primary;
+        border: 2px solid $secondary;
+    }
+}
+
+.btn {
+    @extend %btn;
+
+    &.primary {
+        @extend %btn_primary;
+    }
+
+    &.secondary {
+        @extend %btn_secondary;
+    }
+}
+
+%icon {
+    font-family:$icon;
+}
+
+// use this to visually hide things 
+// (i.e. form labels - shouldn't be "display:none" for accessibility reasons)
+%hidden {
+    clip:rect(1px, 1px, 1px, 1px);
+    clip-path:inset(50%);
+    height:1px;
+    width:1px;
+    margin:-1px;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+}
+
+.hide-me {
+    @extend %hidden;
+}

@@ -1,0 +1,23 @@
+%centerblock {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	clear: both;
+}
+%flexbox {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+%flex-justify {
+	justify-content: space-between;
+}
+%flex-wrap {
+	flex-wrap: wrap;
+}
+%flex-md {
+	display: flex;
+    align-items: center;
+}
